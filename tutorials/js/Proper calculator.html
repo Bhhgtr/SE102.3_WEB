@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+</head>
+<body>
+
+<script>
+function calculate() {
+  try {
+    const expression = document.getElementById("expression").value;
+    const result = eval(expression);
+    document.getElementById("result").textContent = "Result: " + result;
+  } catch (error) {
+    document.getElementById("result").textContent = "Error: Invalid expression!";
+  }
+}
+</script>
+
+<h2>Calculator</h2>
+<p>Enter your arithmetic expression below:</p>
+<input type="text" id="expression" placeholder="e.g., 5 + 6 * 2" />
+<button onclick="calculate()">Calculate</button>
+<p id="result"></p>
+
+</body>
+</html>

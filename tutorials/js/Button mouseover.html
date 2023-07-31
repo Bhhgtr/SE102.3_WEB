@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bg color button</title>
+</head>
+
+<body>
+<script>
+
+function Red()
+{
+document.body.style.backgroundColor = "red";
+}
+
+function Blue()
+{
+document.body.style.backgroundColor = "blue";
+}
+
+function Green()
+{
+document.body.style.backgroundColor = "green";
+}
+
+function defaultcolor() 
+{
+  document.body.style.backgroundColor = ""; // Setting to an empty string resets to default
+}
+
+</script>
+
+<button type="button" onmouseover="Red()" onmouseout="defaultcolor()">Red</button><br>
+<button type="button" onmouseover="Blue()" onmouseout="defaultcolor()">Green</button><br>
+<button type="button" onmouseover="Green()" onmouseout="defaultcolor()">Blue</button><br>
+
+
+</body>
+</html>

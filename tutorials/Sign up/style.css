@@ -1,0 +1,27 @@
+.container{
+    background-color:white;
+    width: 25%;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.sign{
+    background-color: black;
+}
+
+.asd{
+    background-color: blue;
+    
+}
+
+tfoot{
+    background-color: black;
+}
+
+table{
+    background-color: aquamarine;
+}
+
+thead{
+    background-color: blue;
+}

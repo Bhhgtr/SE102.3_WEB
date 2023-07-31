@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math Operations</title>
+</head>
+<body>
+
+<script>
+function add() {
+  let num1 = parseFloat(prompt("Enter the first number:"));
+  let num2 = parseFloat(prompt("Enter the second number:"));
+  let result = num1 + num2;
+  alert("Result: " + result);
+}
+
+function subtract() {
+  let num1 = parseFloat(prompt("Enter the first number:"));
+  let num2 = parseFloat(prompt("Enter the second number:"));
+  let result = num1 - num2;
+  alert("Result: " + result);
+}
+
+function multiply() {
+  let num1 = parseFloat(prompt("Enter the first number:"));
+  let num2 = parseFloat(prompt("Enter the second number:"));
+  let result = num1 * num2;
+  alert("Result: " + result);
+}
+
+function divide() {
+  let num1 = parseFloat(prompt("Enter the first number:"));
+  let num2 = parseFloat(prompt("Enter the second number:"));
+
+  // Check if the divisor is zero
+  if (num2 === 0) {
+    alert("Error: Division by zero is not allowed.");
+    return;
+  }
+
+  let result = num1 / num2;
+  alert("Result: " + result);
+}
+</script>
+
+<button onclick="add()">Addition</button>
+<button onclick="subtract()">Subtraction</button>
+<button onclick="multiply()">Multiplication</button>
+<button onclick="divide()">Division</button>
+
+</body>
+</html>
